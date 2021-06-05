@@ -1,0 +1,85 @@
+\hypertarget{classshifr}{}\doxysection{Класс shifr}
+\label{classshifr}\index{shifr@{shifr}}
+
+
+Шифрование методом Маршрутной перестановки Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt.  
+
+
+
+
+{\ttfamily \#include $<$shifr.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classshifr_a6a3496d516e17101408da943aba2dfb8}{encrypt}} (std\+::string in, const int key)
+\begin{DoxyCompactList}\small\item\em Зашиврование \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classshifr_a3f678e845e57146cf854d874d5ac351f}{decrypt}} (std\+::string in, const int key)
+\begin{DoxyCompactList}\small\item\em Расшифрование \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом Маршрутной перестановки Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. 
+
+\begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classshifr_a3f678e845e57146cf854d874d5ac351f}\label{classshifr_a3f678e845e57146cf854d874d5ac351f}} 
+\index{shifr@{shifr}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!shifr@{shifr}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string shifr\+::decrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{in,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Расшифрование 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in} & зашифрованный текст. Не пустая строка Строчные симводы преобразуются в прописные Не-\/буквы удаляются \\
+\hline
+{\em key} & целое число \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classencryptException}{encrypt\+Exception}}} & при пустом тексте \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classshifr_a6a3496d516e17101408da943aba2dfb8}\label{classshifr_a6a3496d516e17101408da943aba2dfb8}} 
+\index{shifr@{shifr}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!shifr@{shifr}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string shifr\+::encrypt (\begin{DoxyParamCaption}\item[{std\+::string}]{in,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Зашиврование 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in} & открытый текст. Не пустая строка Не-\/буквы удаляются Строчные буквы преобразуются в прописные \\
+\hline
+{\em key} & целое число \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classencryptException}{encrypt\+Exception}}} & при вводе в качестве параметра пустого текста \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{shifr_8h}{shifr.\+h}}\item 
+\mbox{\hyperlink{shifr_8cpp}{shifr.\+cpp}}\end{DoxyCompactItemize}
